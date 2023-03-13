@@ -1,7 +1,7 @@
 public class BmiService {
-    public int calculate(double index, int weightInKilorams) {
+    public int calculate(double heightInMeters, int weightInKilorams) {
         int result;
-        result = (int) (weightInKilorams / (index * index));
+        result = (int) (weightInKilorams / Math.pow(heightInMeters, 2));
         return result;
     }
 }
